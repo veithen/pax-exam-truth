@@ -76,6 +76,9 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/jars</outputDirectory>
                             <name>%bundle.symbolicName%.jar</name>
+                            <artifactSet>
+                                <dependencySet/>
+                            </artifactSet>
                         </configuration>
                     </execution>
                     <execution>
@@ -86,14 +89,12 @@
                         <configuration>
                             <name>META-INF/links/%bundle.symbolicName%.link</name>
                             <value>classpath:%bundle.symbolicName%.jar</value>
+                            <artifactSet>
+                                <dependencySet/>
+                            </artifactSet>
                         </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <artifactSet>
-                        <dependencySet/>
-                    </artifactSet>
-                </configuration>
             </plugin>
         </plugins>
     </build>
