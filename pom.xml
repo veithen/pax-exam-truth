@@ -57,7 +57,7 @@
 
     <properties>
         <github.repository>pax-exam-truth</github.repository>
-        <truth.version>1.1</truth.version>
+        <truth.version>1.1.1</truth.version>
     </properties>
 
     <dependencyManagement>
